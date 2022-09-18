@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>My first Hand At Frontend</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id = "Header">
+            <button id = "addFolder">Add Folder</button>
+            <button id = "addTextFile">Add Text File</button>
+        </div>
+
+        <div id = "BreadCrumb">
+            <a purpose = "path" rid = "-1">Root</a>
+        </div>
+
+        <div id = "Container"></div>
+
+        <div id = "App">
+            <div id = "app-title-bar">
+                <div id = "app-title">Title Will Come Here</div>
+                <div id = "window-actions">
+                    <span class="material-icons min"> maximize </span>
+                    <span class="material-icons"> fullscreen </span>
+                    <span id = "app-close" class="material-icons"> close </span>
+                </div>
+            </div>
+
+            <div id = "app-menue-bar"></div>
+            
+            <div id = "app-body"></div>
+        </div>
+
+        <template id = "templates">
+            <div class="folder" rid="" pid="">
+                <span action="rename">RENAME</span>
+                <span action="delete">DELETE</span>
+                <span action="view">VIEW</span>
+                <div purpose="name"></div>
+            </div>   
+
+            <div class="text-file" rid="" pid="">
+                <span action="rename">RENAME</span>
+                <span action="delete">DELETE</span> 
+                <span action="view">VIEW</span>
+                <div purpose="name"></div>
+            </div> 
+
+            <a purpose = "path" rid = "-1"></a> 
+            
+            <div purpose = "notepad-menu" class = "notepad-menu">
+                <span action = "save"class="material-icons"> save </span>
+                <span pressed = "false" action = "underline" class="material-icons"> format_underline </span>
+                <span pressed = "false" action = "bold" class="material-icons"> format_bold </span>
+                <span pressed = "false" action = "italic" class="material-icons"> format_italic </span>
+                <input type = "color" action = "bgColor">
+                <input type = "color" action = "fgColor">
+
+                <select action = "font-family">
+                    <option value = "monospace">monospace</option>
+                    <option value = "serif">serif</option>
+                    <option value = "sans-serif">sans-serif</option>
+                    <option value = "cursive">cursive</option>
+                </select>
+
+                <select action = "font-size">
+                    <option value = "8">8</option>
+                    <option value = "10">10</option>
+                    <option value = "12">12</option>
+                    <option value = "14">14</option>
+                    <option value = "16">16</option>
+                    <option value = "18">18</option>
+                    <option value = "20">20</option>
+                    <option value = "22">22</option>
+                </select>
+                <span action = "download" class="material-icons">download</span>
+                <span action = "forupload" class="material-icons">upload</span>
+                <input action = "upload" type = "file" />
+                <a purpose = "download" href = "http://www.google.com">Link</a>
+            </div>
+
+            <div purpose = "notepad-body" class = "notepad-body">
+                <textarea>I am the notepad's body</textarea>
+            </div>
+        </template>
+
+        <script type = "text/javascript" src = "test.js"></script> 
+    </body>
+
+    
+</html>

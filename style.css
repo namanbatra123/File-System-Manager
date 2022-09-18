@@ -1,0 +1,225 @@
+#Header{
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#Header button{
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 5px 7px 7px black;
+    cursor: pointer;
+    background-color:lime;
+    border: transparent;
+}
+
+#Header button:hover{    
+    transform: scale(1.05);
+    background-color: lightyellow;
+}
+
+#BreadCrumb{
+    border: 1px solid black;
+    margin: 10px;
+    display: flex;
+}
+
+#Breadcrumb a{
+    /* background-color: #00ffcc; */
+    background-image: radial-gradient(white,  #00ffcc);
+    color: black;
+    padding: 10px;
+    border-right: 5px solid black;
+    
+}
+
+#Breadcrumb a:hover{
+    background-image: radial-gradient(white,  #2200ff);
+    text-decoration: underline;
+}
+
+#Container{
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+}
+
+.folder{
+    background-image: radial-gradient(#fbcfe8, #8172f4);
+    color: white;
+    height: 100px;
+    width: 150px;
+    
+    margin: 10px;
+    padding: 10px;
+    font-size: 11px;
+    text-align: justify;
+    border-radius: 10px;
+    border: 2px solid blue;
+    border: transparent;
+    box-shadow: 3px 7px 5px black;
+    /* font-weight: 800; */
+}
+
+.folder [action]{
+    text-decoration: underline;
+    cursor: pointer;
+    margin: 3px;
+}
+
+.folder:nth-child(even){
+    background-image: radial-gradient(#fbcfe8, #78f472);
+}
+
+.folder [action]:hover{
+    color: black;
+}
+
+.folder div[purpose = name]{
+    margin-top: 80px;
+}
+
+.text-file{
+    background-image: radial-gradient(#fbcfe8, #f47272);
+    color: white;
+    height: 100px;
+    width: 150px;
+    
+    margin: 10px;
+    padding: 10px;
+    font-size: 11px;
+    text-align: justify;
+    border-radius: 10px;
+    border: 2px solid blue;
+    border: transparent;
+    box-shadow: 3px 7px 5px black;
+    /* font-weight: 800; */
+}
+
+.text-file [action]{
+    text-decoration: underline;
+    cursor: pointer;
+    margin: 3px;
+}
+
+.text-file:nth-child(even){
+    background-image: radial-gradient(#fbcfe8, #f472c7);
+}
+
+.text-file [action]:hover{
+    color: black;
+}
+
+.text-file div[purpose = name]{
+    margin-top: 80px;
+}
+
+#app{
+    border: 1px solid black;
+    margin: 10px;
+}
+
+#app-title-bar{
+    display: flex;
+    background-color: cyan;
+    height: 40px;
+}
+
+#app-title{
+    width: 100%;
+    text-align: center;
+    border-right: 5px solid red;
+}
+
+#app-menue-bar{
+    display: flex;
+    background-color: teal;
+    height: 40px;
+}
+
+#app-body{
+    display: flex;
+    background-color: lightcyan;
+    height: 500px;
+}
+
+.notepad-menu{
+    border: 1px solid white;
+    width: 100%;
+    padding: 5px;
+}
+
+.notepad-menu *{  /* selects everything inside notepad-menu class.*/
+    margin: 0px 5px;
+    cursor: pointer;
+    padding: 2px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.notepad-menu span{
+    vertical-align: bottom;  
+}
+
+.notepad-menu span:hover{
+    border: 2px solid black;
+    background-color: white;
+    color: teal; 
+}
+
+.notepad-menu [pressed=true]{
+    border: 2px solid black;
+    background-color: white;
+    color: teal; 
+}
+
+.notepad-menu input[type = color]{
+    width: 30px;  
+}
+.notepad-menu select{
+    height: 30px;
+}
+
+.notepad-body{
+    height: 100%;
+    width: 100%;
+}
+
+.notepad-body textarea{
+    height: 100%;
+    width: 100%;
+}
+
+[purpose = download]{
+    display: none;
+}
+
+#window-actions{
+    cursor: pointer;
+    width: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.min{
+    padding-top: 20px;
+}
+
+#window-actions span:hover{
+    color: rgb(50, 68, 205); 
+    transform: scale(1.1);
+    border-radius: 5px;
+}
+
+.notepad-menu input[action = "upload"]{
+    display: none;
+}
